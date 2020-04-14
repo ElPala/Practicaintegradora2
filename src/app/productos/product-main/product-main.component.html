@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-4">
+        <input type="text" 
+         class="form-control" name="" id="" aria-describedby="helpId" placeholder="" (input)="onSearchChange($event.target.value)">
+    </div> 
+    
+</div>
+
+<div class=" mt-2">
+    <app-product-list [search]='search' ></app-product-list>
+
+    <div class="alert alert-danger" role="alert"   >
+        <strong>Ningún producto concuerda con la búsqueda</strong>
+    </div>
+
+</div>
+
